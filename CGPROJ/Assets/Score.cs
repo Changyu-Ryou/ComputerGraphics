@@ -5,14 +5,16 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
+    public static int coin=0;
     public static int score;
     //public Text myText;
     public GameObject score1;
+    
 
     // Start is called before the first frame update
     void Awake()
     {
-        score = 30;
+        score = 0;
     }
 
     // Update is called once per frame
