@@ -85,14 +85,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void OnTrackingFound()
     {
-        var rigidBody = GetComponentsInChildren<Rigidbody>(true);
-
-        foreach (var component in rigidBody)
-        {
-            if (component.name == "Coin")
-                component.useGravity = true;
-        }
-
         if (mTrackableBehaviour)
         {
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);

@@ -9,20 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
+  m_Script: {fileID: -2067402452, guid: 8a9a760f95896c34689febc965510927, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AWjd8M7/////AAABmQr7E1h0m0FqotnkVMom8xk7Soj79QQWIh2qluynCO1KCwxYMMYb/M4kh2XEsVTTFGNk6CgdhjOgE6sVAhPJi8U6nyaOrT9cwg6i4v8W3Lgt3DO+4WQIkqujNENkE8FkO3wbxSwQffLAJ9Uy3lxfKcoD1uCetKZXj2r3nPsNqODYO3FO7vBB9/3I4mE+mQN46/EL0kqKITZZiBFFCs9V2FUUiJpoDkA9PTm4qPRuS9ETRq7gavPdT+9IrsXmY8OYoT85uEmX4HngJc+9t1ZPvYQQxIpFi/0TsgZAmurnvW7wVK9JAsDU8rYHtjUgOah3zWuqAOsWfFeAOfUkRGkyzzi6q7oU567Gy4K2OdsJWOkt
-    ufoLicenseKey: QWV6V05iUC8vLy8vQUFBQUtGRElocWwzc1U4SmkxNlhDdnk4K3BlQkYxSm5WVUo0V2k2K1lTbTFMTzNLMldmdkU5WGVnNWNwNzB3TDZKNDRQeGxBZlhIQzhUbDhpUTFMY0RZNExqR1I3OWNDaHlibmZSNkhoaFRYSVRjRCtGeVc5bytQMVJDdGY5QWhCcG5BRi9VajZoRVZ0cUcwTkkxN1JFRkV4Zm9BNXFvMXRiWG1HMUFrT3JJdEp3N1BhWHdqYmN4cnVXT1BjdU54WDdCSU5zLzRkRHJLWFAvRUkxc2xvSE5IeWdmMTllNTRxSUVzaysxdktOV0ZxNDBWYjNFSm5qWXdYRDdQZE5GaldKSUJ1K2ZFQk1JSGxLSFhGajBFcElHdU9wL2NpT0pLOTlSck4vZndkSCtTNE5uUHZzT0RoMitxUmhSby8wTjF5T2ExOTlJQTUwMGRwd3dUWWZJenZQcFd5WlpPZGdkYW1RWXRvTjNVZGl1ZEhzcmU=
+    ufoLicenseKey: QVV2QThEWC8vLy8vQUFBQUtLVk8vUm5IWmt6NHRkR2NoZUlMaU1CVWFRdXBTRk9renE5YUNaYjdaYnV6Y0JmdVlZSTQ2ZjFaV0ZTZ2h3NUxnNVY2SXdyOTNVQk16MEhtbW9Ob0pCZGc2NUQwMzNHOGljTkFURWlDSmNMM1FLaUlsdTZ6NSt1N3laR2VBNW5Ub0MyWENIT1Fqck1nbzdmQWhiSTVqSFJEUFoxeFlXS3ZUdXdJQ001aGVGdVJvTjJqV0d3ZXZ5c2FiaSs0Qm5Db1d0UjNrdWZ5d1Y0TVVwWUJCd2VBVEhKakhBSzg3NEVLeTVDekd2bldKbitIUDJER3BLN2xLZGU4NHI1SmF0a2JaSDNvVmQ5S2E0cmpDRnEyOVJNaUxJaG9qaW9XemlISlpPQzQxVytLOU9LZ0dzY041Q0toYWVHUnBlZUd3ZnJLNHc0QmNyMGdCZ3BoaVpoWG1qRUdlZ0lqQlcwNTZ6YzNpWUJZTkdtT0tWU2Y=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
+    maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 1
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
     version: 8.5.8
-    eulaAcceptedVersions: '{"Values":["8.5"]}'
+    eulaAcceptedVersions: '{"Values":["","8.5","0.0"]}'
   database:
     disableModelExtraction: 0
   videoBackground:
