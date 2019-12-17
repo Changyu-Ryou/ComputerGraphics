@@ -14,12 +14,13 @@ GameObject:
   - component: {fileID: 5550426332120297796}
   - component: {fileID: 5550426332120297798}
   - component: {fileID: 2086798936314197303}
+  - component: {fileID: 114243976112676664}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 1
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &5550426332120297818
 Transform:
@@ -66,15 +67,15 @@ MeshRenderer:
   m_GameObject: {fileID: 5550426332120297792}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
-  m_MotionVectors: 0
+  m_MotionVectors: 2
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b9b0d24498a4ff14b89959a94fba6b88, type: 2}
+  - {fileID: 2100000, guid: 8e6503ed67aca694d9984985a9d3238e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -122,3 +123,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114243976112676664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5550426332120297792}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadf2f224522fb84191e20b369ee54d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Floor1: {fileID: 5550426332120297792}
+  Floor2: {fileID: 550626922050720682, guid: 04c93980b4749604ba88fb38cdcccbcd, type: 3}

@@ -7,6 +7,7 @@ public class Score : MonoBehaviour
 {
     public static int coin=0;
     public static int score;
+    int coinstat = 0;
     //public Text myText;
     public GameObject score1;
     
@@ -14,7 +15,7 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        score = 0;
+        score = 100;
     }
 
     // Update is called once per frame
