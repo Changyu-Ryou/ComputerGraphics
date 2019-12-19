@@ -11,7 +11,8 @@ public class Manager : MonoBehaviour {
 	// Use this for initialization
 	BluetoothHelper bluetoothHelper;
 	string deviceName;
-	[SerializeField]
+    string send_Message;
+    [SerializeField]
 	Toggle Toggle_isDevicePaired;
 	[SerializeField]
 	Toggle Toggle_isConnected;
@@ -38,13 +39,14 @@ public class Manager : MonoBehaviour {
 			if (bluetoothHelper.isDevicePaired ()) {
 				Debug.Log ("try to connect");
 				bluetoothHelper.Connect (); // tries to connect
-                DebugHolder.SetActive(false);       //커넥되면 버튼 다 없애기
+               
             } else {
 				Debug.Log ("not DevicePaired");
 			}
 		});
 		Btn_Disconnect.onClick.AddListener (() => {
-			bluetoothHelper.Disconnect ();
+            //bluetoothHelper.Disconnect ();
+            Score.score++;
 			Debug.Log ("try to Disconnect");
 		});
 		//=============================================================================================
@@ -74,6 +76,11 @@ public class Manager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        /*
+        if (GameObject.Find("Score").GetComponent<Score>().money()==1)
+        {
+            OnMessageSend();
+        }*/
 
 		if (Input.GetKeyUp (KeyCode.Alpha0)) {
 			if (!isDebugOn) {
@@ -87,8 +94,31 @@ public class Manager : MonoBehaviour {
 		}
 	}
 
-	//Asynchronous method to receive messages
-	void OnMessageReceived () {
+    public void OnMessageSend()
+    {
+        send_Message = "5";            //inputText.text;
+        //received_message = bluetoothHelper.Read();
+        Debug.Log("msg 값은 = " + send_Message);
+        Debug.Log("onmessage로 넘어옴");
+        /*
+        if (send_Message == null)
+        {
+            Debug.Log("Error : Messgae is Null");
+            //Txt_Door.text = "Door is close";
+            //onDoorClose.Invoke();
+        }*/
+
+        if (send_Message != null)
+        {
+            Debug.Log("msg = " + send_Message);
+            bluetoothHelper.SendData(send_Message);
+
+        }
+    }
+
+
+    //Asynchronous method to receive messages
+    void OnMessageReceived () {
 		received_message = bluetoothHelper.Read ();
 		Debug.Log(received_message);
 
@@ -110,7 +140,9 @@ public class Manager : MonoBehaviour {
 		try {
 			bluetoothHelper.StartListening ();
 			Debug.Log ("Connected");
-		} catch (Exception ex) {
+            isDebugOn = false;                  //커넥되면 디버그 창 없애기
+            DebugHolder.SetActive(false);       //커넥되면 버튼 다 없애기
+        } catch (Exception ex) {
 			Debug.Log (ex.Message);
 		}
 	}

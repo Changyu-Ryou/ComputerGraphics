@@ -20,7 +20,7 @@ public class Spawner : MonoBehaviour
     void Start()
     {
         
-        for (int i = 0; i < 200; i++)
+        for (int i = 0; i < 400; i++)
         {
    
             Vector3 offset = new Vector3(Random.Range(-5, 5), -3, Random.Range(-8, 0));
@@ -34,15 +34,16 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        /*
         if (Input.GetButtonDown("Fire1")) //&& Score.score > 0 )
         {
             //Vector3 offset = new Vector3(Mathf.Sin(Time.time * 10), 0, 0);
             //Instantiate(prefab, transform.position + offset, transform.rotation);
             spawn();
             //Score.score--;
-
-        }else if(Score.coin > 0)
+            
+        }*/
+        if (Score.coin > 0)
         {
             spawn();
             Score.coin--;

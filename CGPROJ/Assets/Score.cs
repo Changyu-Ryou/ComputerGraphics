@@ -15,12 +15,21 @@ public class Score : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        score = 100;
+        score = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         score1.GetComponent<Text>().text = score.ToString();
+
     }
+    /*
+    public int money()
+    {
+        if (score > 0)
+            return 1;
+        else
+            return 0;
+    }*/
 }
